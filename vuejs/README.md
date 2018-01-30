@@ -1,6 +1,8 @@
-# vuejs
+# vue-js-study
 
-> A Vue.js project
+> Vue.js study
+> Vue.js 공부를 해봅시다!
+> MC Kong 기술 블로그 --> [my blog](https://jsstudygroup.github.io/jsStudyBlog/)
 
 ## Build Setup
 
