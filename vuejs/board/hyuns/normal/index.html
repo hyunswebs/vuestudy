@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.2-dist/css/bootstrap-theme.css">
+    <script src="../lib/vue.js"></script>
+
+</head>
+<body>
+<div id = "board">
+    <div id="boardList"  v-if="viewType == 'list'">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr v-for = "(item,index) in items" :item='item' v-on:click="detail(item)">
+                    <td>{{index + 1}}  {{viewType}}</td>
+                    <td>{{item.title}}</td>
+                    <td>{{item.nick}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="boardDetail"  v-if="viewType == 'detail'">
+        <table class="table">
+            <tr>
+                <th>제목</th>
+                <th><input type="text" class="form-control" v-model="selectedArticle.title"></th>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <th><input type="text" class="form-control" v-model="selectedArticle.content"></th>
+            </tr>
+        </table>
+
+        <div>
+            <button type="button" class="btn btn-primary" v-on:click="modify(selectedArticle)">수정</button>
+            <button type="button" class="btn btn-danger" v-on:click="changeViewType('list')">취소</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    var board = new Vue({
+        el : '#board',
+        data : {
+            viewType : 'list',
+            selectedArticle : {},
+            items : [
+                {no : 1,title:'제목1' ,content : '제목 1 내용 ~~~', nick : '홍길동'},
+                {no : 2,title:'제목2' ,content : '제목 2 내용 ~~~', nick : '홍길동'},
+                {no : 3,title:'제목3' ,content : '제목 3 내용 ~~~', nick : '홍길동'}
+            ]
+        },
+        methods: {
+            detail: function (article) {
+                this.viewType = 'detail';
+                this.selectedArticle = article;
+            },
+            modify : function(article){
+                Vue.set(this.items, article.no - 1, article);
+                this.changeViewType('list');
+            },
+            changeViewType : function(viewType){
+                this.viewType = viewType;
+                if(viewType === 'list'){this.selectedArticle = {} };
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
