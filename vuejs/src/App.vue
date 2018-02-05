@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <board-basic v-bind:list="board"></board-basic>  
-  </div>
+  <board-basic v-bind:list="board"></board-basic>  
 </template>
 
 <script>
