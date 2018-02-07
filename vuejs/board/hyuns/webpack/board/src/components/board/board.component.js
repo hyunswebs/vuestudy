@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import Vue from 'vue'
 import BoardComponent from './table/index.vue';
 export default {
   name: 'board',
@@ -7,9 +7,6 @@ export default {
   data () {
     return {
       items : [
-        {no : 1,title:'제목1' ,content : '제목 1 내용 ~~~', nick : '홍길동'},
-        {no : 2,title:'제목2' ,content : '제목 2 내용 ~~~', nick : '홍길동'},
-        {no : 3,title:'제목3' ,content : '제목 3 내용 ~~~', nick : '홍길동'}
       ]
     }
   },
@@ -17,9 +14,13 @@ export default {
 
   },
   mounted () {
-
+    for(var i= 0 ; i <= 180 ; i++){
+      Vue.set(this.items, i, {no : 3,title:'제목3' ,content : '제목 3 내용 ~~~', nick : '홍길동'})
+    }
   },
   methods: {
-
+    clickCallback: function(pageNum) {
+      console.log(pageNum)
+    }
   }
 }
