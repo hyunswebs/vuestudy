@@ -1,0 +1,240 @@
+body > #app .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+
+    .navbar {
+        padding: 0;
+    }
+
+    .btn-secondary:focus,
+    .show > .btn-secondary {
+        box-shadow: none;
+    }
+
+    .logo {
+        height: 40px;
+        text-align: center;
+        width: 240px;
+        @media (max-width: 560px) {
+            padding-top: 12px;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+    }
+    /*********LEFT MENU COLLAPSE STYLES *********/
+    .navbar-collapse {
+        flex-basis: 0;
+    }
+
+    .sidebar-toggle {
+        display: inline-block;
+        color: #fff;
+        font-size: 23px;
+        font-weight: bold;
+    }
+    /********* END LEFT MENU COLLAPSE STYLES *********/
+    /***** HEADER DROPDOWNS *****/
+    .navbar-nav {
+        flex-direction: row;
+
+        .dropdown-menu,
+        .dropdown-menu .dropdown-item:focus {
+            outline: none;
+        }
+
+        .dropdown-toggle::after {
+            border: none;
+        }
+        .dropdown-toggle img{
+            margin-top: 3px;
+        }
+
+        .dropdown-menu {
+            margin: 0;
+        }
+
+        & > div > button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding-top: 8px;
+
+            > i {
+                font-size: 17px;
+            }
+
+            .badge {
+                color: #fff;
+                top: -14px;
+                left: -7px;
+                border-radius: 50%;
+                font-size: 8px;
+                padding: 2px 4px;
+            }
+
+            &:hover {
+                .badge {
+                    top: -16px;
+                }
+            }
+        }
+
+        /* MESSAGES DROPDOWN */
+        .message_dropdown {
+            .btn-link {
+                cursor: pointer;
+                margin-top: 10px;
+                i {
+                    font-size: 17px;
+                    text-decoration: none;
+
+                }
+                .badge{
+                    color: #fff;
+                    top: -14px;
+                    left: -7px;
+                    border-radius: 50%;
+                    font-size: 8px;
+                    padding: 2px 4px;
+                }
+            }
+            .btn-link:hover{
+                text-decoration: none;
+                .badge{
+                    top:-15px;
+                }
+            }
+            .dropdown-menu.show {
+                transform: translate3d(-86px, 46px, 0) !important;
+                -moz-transform: translate3d(-78px, 46px, 0) !important;
+                margin-top:7px;
+                padding: 0;
+                width: 340px;
+                & > a:first-child{
+                    padding: 1rem;
+                    background-color: #eee;
+                    .messages-header{
+                        color: #333;
+                        padding-left: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        background-color: #eee;
+                    }
+                }
+                .dropdown-item.message:nth-child(even){
+                    background-color: #f7f6f6;
+                }
+                .messages-footer{
+                    padding: 1rem;
+                    background-color: #eee;
+                    a{
+                        color:#333;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .message {
+                .message-image {
+                    width: 45px;
+                    height: 45px;
+                    display: inline-block;
+                    margin-top: -40px;
+                    margin-right: 10px;
+                }
+                .message-body{
+                    display: inline-block;
+                }
+            }
+        }
+        .right-toggle{
+            .badge{
+                padding: 2px 5px 3px 4px;
+            }
+        }
+
+        /* MESSAGES DROPDOWN */
+
+        /* USER PROFILE DROPDOWN */
+        .user-dropdown {
+            .dropdown-toggle{
+                concer:pointer;
+            }
+            .dropdown-toggle {
+                background-color: transparent !important;
+                padding: 0.75rem;
+                cursor: pointer;
+                .user_name_max {
+                    color: #fff;
+                    font-size: 14px;
+                    display: inline-block;
+                }
+                img {
+                    margin-right: 15px;
+                }
+            }
+
+            .dropdown-toggle:after {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                margin-left: .255em;
+                vertical-align: .120em;
+                content: "";
+                border-top: .3em solid #fff;
+                border-right: .3em solid transparent;
+                border-bottom: 0;
+                border-left: .3em solid transparent;
+            }
+            .dropdown-menu.show {
+                transform: translate3d(-54px, 50px, 0) !important;
+                padding: 0;
+            }
+            .dropdown-profile {
+                min-width: 185px;
+                a {
+                    padding: 5px 8px;
+                    color: #333;
+                    text-decoration: none;
+                }
+                .user-header {
+                    padding: 10px 0;
+                    text-align: center;
+                    background-color: #eee;
+                    color: #fff;
+                    .user_name_max {
+                        margin-bottom: 0;
+                    }
+                    img {
+                        height: 90px;
+                        width: 90px;
+                    }
+                }
+                .dropdown-footer {
+                    padding: 8px 0 26px 8px;
+                    border-top: 1px solid #eee;
+                    a {
+                        color: #6699CC;
+                    }
+                }
+            }
+            .user_name_max {
+                margin-top: 10px;
+            }
+
+            /* USER PROFILE DROPDOWN */
+        }
+    }
+    /***** END HEADER DROPDOWNS *****/
+}
+
+.skin-default .navbar {
+    background-color: #eee;
+}
+.striped-col:hover{
+    background-color: #f7f6f6 !important;
+}

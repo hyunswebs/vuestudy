@@ -1,0 +1,215 @@
+
+.m-l-10 {
+    margin-left : 10px;
+}
+input.labelauty + label > span.labelauty-unchecked-image {
+    background-image : url(../../img/images/input-unchecked.png);
+}
+input.labelauty + label > span.labelauty-checked-image {
+    background-image : url(../../img/images/input-checked.png);
+}
+input.labelauty.check-icon + label > span.labelauty-unchecked-image {
+    background-image : url(../../img/images/input-disabled.png);
+}
+input.labelauty.synch-icon + label > span.labelauty-unchecked-image {
+    background-image : url(../../img/images/synch-unchecked.png);
+}
+input.labelauty.synch-icon + label > span.labelauty-checked-image {
+    background-image : url(../../img/images/synch-checked.png);
+}
+input.labelauty.terms-icon + label > span.labelauty-unchecked-image {
+    background-image : url(../../img/images/terms-unchecked.png);
+}
+input.labelauty.terms-icon + label > span.labelauty-checked-image {
+    background-image : url(../../img/images/terms-checked.png);
+}
+input.labelauty.disabled-icon + label > span.labelauty-unchecked-image {
+    background-image : url(../../img/images/input-disabled.png);
+}
+input.labelauty.disabled-icon + label > span.labelauty-checked-image {
+    background-image : url(../../img/images/input-disabled.png);
+}
+input.labelauty + label {
+    display : inline-block;
+}
+input.labelauty.synch-icon1 + label > span.labelauty-checked-image {
+    background-image : url(../../img/flags/au.png);
+}
+input.labelauty.synch-icon2 + label > span.labelauty-checked-image {
+    background-image : url(../../img/flags/us.png);
+}
+input.labelauty.synch-icon1 + label > span.labelauty-unchecked-image {
+    background-image : url(../../img/images/input-disabled.png);
+}
+input.labelauty.synch-icon2 + label > span.labelauty-unchecked-image {
+    background-image : url(../../img/images/input-unchecked.png);
+}
+input.labelauty:checked + label,
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before {
+    background-color : #428bca;
+}
+.checkbox-info input[type="checkbox"]:checked + label::before,
+.checkbox-info input[type="radio"]:checked + label::before,
+.radio-info input[type="radio"]:checked + label::after {
+    background-color : #4fc1e9;
+}
+.checkbox-danger input[type="checkbox"]:checked + label::before,
+.checkbox-danger input[type="radio"]:checked + label::before,
+.radio-danger input[type="radio"]:checked + label::after {
+    background-color : #fb8678;
+}
+.checkbox-success input[type="checkbox"]:checked + label::before,
+.checkbox-success input[type="radio"]:checked + label::before {
+    background-color : #22d69d;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::before,
+.checkbox-warning input[type="radio"]:checked + label::before {
+    background-color : #ffb65f;
+}
+.checkbox-default input[type="checkbox"]:checked + label::before,
+.checkbox-default input[type="radio"]:checked + label::before {
+    background-color : #dcdcdc;
+}
+.checkbox-success input[type="checkbox"]:indeterminate + label::before, .checkbox-success input[type="radio"]:indeterminate + label::before {
+    background-color : #22d69d;
+    border-color     : #22d69d;
+}
+.checkbox-danger input[type="checkbox"]:indeterminate + label::before, .checkbox-danger input[type="radio"]:indeterminate + label::before {
+    background-color : #fb8678;
+    border-color     : #fb8678;
+}
+.checkbox-default input[type="checkbox"]:indeterminate + label::before, .checkbox-default input[type="radio"]:indeterminate + label::before {
+    background-color : #DCDCDC;
+    border-color     : #DCDCDC;
+}
+.checkbox-primary input[type="checkbox"]:checked + label::before, .checkbox-primary input[type="radio"]:checked + label::before {
+    background-color : #428BCA;
+    border-color     : #428BCA;
+}
+.checkbox-info input[type="checkbox"]:checked + label::before, .checkbox-info input[type="radio"]:checked + label::before {
+    background-color : #4FC1E9;
+    border-color     : #4FC1E9;
+}
+.checkbox-warning input[type="checkbox"]:checked + label::before, .checkbox-warning input[type="radio"]:checked + label::before {
+    background-color : #FFB65F;
+    border-color     : #FFB65F;
+}
+.checkbox-primary input[type="checkbox"]:indeterminate + label::before, .checkbox-primary input[type="radio"]:indeterminate + label::before {
+    background-color : #428BCA;
+    border-color     : #428BCA;
+}
+input.labelauty:checked:not([disabled]) + label:hover {
+    background-color : #4FC1E9;
+}
+.radio,
+.checkbox {
+    display       : block;
+    min-height    : 0;
+    margin-top    : 10px;
+    margin-bottom : 10px;
+}
+.radio.radio-inline {
+    margin-left : 23px;
+}
+/*pretty checkable*/
+
+.test_radio {
+    display : block;
+}
+.awesomeradio_grid_sep {
+    border-right : 1px solid #ccc;
+}
+@media screen and (max-width : 767px) {
+    .awesomeradio_grid_sep {
+        border-right : 0;
+    }
+}
+/*search radio and checkbox code*/
+
+.searchable-container {
+    margin : 13px 0 30px 0;
+}
+.searchable-container label.btn-secondary.active {
+    background-color : #4d80b2 !important;
+    color            : #FFF !important;
+    box-shadow: none !important;
+}
+.searchable-container label.btn-secondary {
+    width      : 90%;
+    border     : 1px solid #dcdcdc;
+    box-shadow : 5px 8px 8px 0 #ccc;
+}
+.searchable-container label .bizcontent {
+    width : 100%;
+}
+.searchable-container .btn-group {
+    width : 90%
+}
+.searchable-container .btn span.glyphicon {
+    opacity : 0;
+}
+.searchable-container .btn.active span.glyphicon {
+    opacity : 1;
+}
+.bizmoduleselect .btn-secondary{
+    background-color:#dcdcdc;
+    color:#333;
+}
+
+/*awesome inline checkbox*/
+@media(min-width: 768px) and (max-width:1024px){
+    .inline-response {
+        padding-left: 10px;
+    }
+}
+@media(max-width:768px){
+    div.radio{
+        margin-left: 0 !important;
+    }
+}
+[for~=checkbox4]{
+    padding-left: 8px;
+    padding-right: 12px;
+}
+.custom-control-indicator{
+    height: 30px;
+    width: 30px;
+}
+.custom-control-description{
+    margin-left: 15px;
+    font-size: 14px;
+
+}
+.custom-controls-stacked .custom-control{
+    min-height: 2.3rem;
+}
+.custom-checkbox .custom-control-description,.custom-radio .custom-control-description{
+    margin-top: 7px;
+}
+
+.disabled,input[disabled="disabled"]{
+    cursor: not-allowed;
+}
+.checkbox{
+    padding-left: 0;
+}
+.radio{
+    padding-left: 0;
+}
+.inline-response label{
+    padding-left: 0;
+}
+@media(max-width: 320px){
+    .check_btn{
+        margin-left: -15px;
+    }
+}
+.custom-control-label::after,.custom-control-label::before{
+    width: 2rem;
+    height:2rem;
+}
+.custom-control-label{
+    margin-left: 1rem;
+    margin-top: 5px;
+}

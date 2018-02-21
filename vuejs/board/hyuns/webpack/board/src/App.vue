@@ -1,23 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <preloader v-show="this.$store.state.preloader"></preloader>
+    <router-view></router-view>
   </div>
 </template>
-
 <script>
+import preloader from './components/layout/preloader/index'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    preloader // 화면 loading component
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss" src="./assets/sass/bootstrap/bootstrap.scss"></style>
+<style src="./vendors/font-awesome/css/font-awesome.min.css"></style>
+<style src="./vendors/themify-icons/css/themify-icons.css"></style>

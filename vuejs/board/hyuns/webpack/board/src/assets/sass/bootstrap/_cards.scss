@@ -1,0 +1,10 @@
+.card {
+    margin-bottom: 13px;
+    margin-top: 13px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+    .card-header .card-title {
+        font-size: 16px;
+        float:left;
+        margin-bottom:0 !important;
+    }
+}

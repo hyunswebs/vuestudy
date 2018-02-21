@@ -1,0 +1,81 @@
+/****** 3.LEFT SIDEBAR ******/
+.left-aside {
+    width: 240px;
+    background: #FFF;
+    border-right: 5px solid #EEE;
+}
+.submenu-header:hover{
+    color:#33CC99 !important;
+}
+#menu {
+    .navigation {
+        padding-left: 0;
+
+        .menu-item,
+        .submenu {
+            list-style-type: none;
+
+            a {
+                text-align: left;
+                color: #666;
+                position: relative;
+                transition: all 0.2s;
+                display: block;
+                font-size: 13px;
+                line-height: 20px;
+                padding: 11px 20px;
+                text-decoration: none;
+
+                &.active {
+                    border-right: 3px solid #68DEB7;
+                    background: #EEEEEE;
+                    color: #33CC99;
+                }
+            }
+            a:hover{
+                color:#33CC99 !important;
+            }
+
+        }
+
+
+        .submenu {
+            .submenu-header {
+                cursor: pointer;
+                user-select: none;
+
+                .submenu_icon {
+                    transition: all 0.3s;
+
+                    i {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            &.active {
+                >  .submenu-header {
+                    border-right: 3px solid #68DEB7;
+                    background: #EEEEEE;
+                    color: #33CC99;
+
+                    > .submenu_icon {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            .submenu-content {
+                padding-left: 0;
+
+                li a {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+.profile-left a{
+    text-decoration: none;
+}
+/******* END LEFT SIDEBAR *****/

@@ -1,0 +1,22 @@
+.daterangepicker.opensleft:after {
+    display : none;
+}
+.date-picker-wrapper {
+    z-index : 2;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color : #fff;
+}
+.clockpicker-button{
+    background-color: #CCCCCC;
+    color: #fff;
+}
+.date-picker-wrapper.no-shortcuts{
+    z-index: 99 !important;
+}
+.dd-w{
+    z-index: 99 !important;
+}
+.td-wrap.td-show{
+    z-index: 99;
+}

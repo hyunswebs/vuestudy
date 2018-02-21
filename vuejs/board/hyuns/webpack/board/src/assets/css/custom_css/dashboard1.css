@@ -1,0 +1,268 @@
+/*global changes css*/
+
+
+/*page level*/
+
+.header-element h3 {
+    margin: 19px 0 0 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+.header-element small {
+    color: #555;
+}
+
+.header-object {
+    font-size: 20px;
+    margin: 15px 25px 0 0;
+}
+
+
+/*option search*/
+
+.header-object .option-search {
+    width: 60%;
+}
+
+.header-object .option-search .search-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 3px 12px;
+    background-color: #fff;
+    font-size: small;
+}
+
+.header-object .option-search .search-wrapper i {
+    font-size: small;
+    vertical-align: middle;
+}
+
+.search-wrapper-focus {
+    -moz-box-shadow: 0 0 5px #51cbee;
+    -webkit-box-shadow: 0 0 5px #51cbee;
+    box-shadow: 0 0 5px #51cbee;
+    border: 1px solid #51cbee !important;
+}
+
+.header-object .option-search input {
+    width: 75%;
+    border: 0;
+    height: 20px;
+}
+
+.header-object .option-search input:focus,
+.header-object .option-search input:active {
+    outline: none;
+}
+
+.header-element p {
+    color: #e2e2e2;
+    font-size: 13px;
+    margin: 0 0 8px;
+}
+
+
+/*content*/
+
+
+/*mail tiles sales, visits etc*/
+
+.card-box {
+    padding: 16px 16px 10px 16px;
+    border: 1px solid rgba(54, 64, 74, 0.19);
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    margin-bottom: 12px;
+    background-color: #ffffff;
+}
+
+.widget-bg-color-icon .bg-icon {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    background-clip: padding-box;
+}
+
+.widget-bg-color-icon .bg-icon i {
+    font-size: 40px;
+    line-height: 80px;
+}
+
+.widget-bg-color-icon hr {
+    border: 0;
+    height: 1px;
+    margin: 10px 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+}
+
+.widget-bg-color-icon p {
+    margin: 0;
+}
+
+
+/*Dashboard chart*/
+
+.main-chart .panel-tabs {
+    padding: 2px 0 0 10px;
+}
+
+.main-chart .panel-tabs .nav-tabs {
+    border-bottom: 0;
+}
+
+.main-chart .panel-tabs .nav-tabs>li {
+    font-size: 13px;
+    width: 143px;
+}
+
+.main-chart .panel-tabs .nav-tabs>li span {
+    font-size: 16px;
+}
+
+.main-chart .panel-tabs .nav-tabs>li a {
+    padding: 8px 8px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.main-chart .panel-tabs .nav-tabs .active {
+    font-weight: bold;
+}
+
+.main-chart .card-header {
+    padding: 0 1.25rem 0.65rem 1.25rem !important;
+}
+
+.card-header-tabs .nav-link.active {
+    border-top: 3px solid #6699cc;
+}
+
+#home .lcs_switch {
+    position: absolute;
+    z-index: 2;
+    right: 55px;
+    top: 76px;
+}
+
+#home .form-group {
+    margin: -12px;
+}
+
+.lcs_switch.lcs_on {
+    background: #428bca;
+}
+
+
+/*tab-1*/
+
+.livechart-tab1 {
+    width: 100%;
+    height: 270px;
+}
+
+
+/*tab-2*/
+
+#dashboard-chart1 {
+    min-height: 265px;
+}
+
+.redraw-cart {
+    transition: 0.5s;
+    position: absolute;
+    right: 40px;
+    font-size: 18px;
+}
+
+@media(max-width:320px) {
+    .redraw-cart {
+        right: 15px;
+    }
+}
+
+
+/*Dashboard chart1 ends*/
+
+/*real time chart*/
+
+.real-timechart .panel-heading {
+    background: #fff;
+    border-bottom: 0;
+}
+
+.real-timechart .panel-body {
+    padding-bottom: 0;
+}
+
+.real-timechart .real-value,
+.real-timechart .return-value {
+    margin: auto;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    padding-top: 22px;
+    margin-bottom: 10px;
+}
+
+.real-timechart h3 {
+    font-size: 17px;
+}
+
+.real-chart {
+    width: 100%;
+    height: 120px;
+}
+
+.real-timechart hr {
+    border: 0;
+    height: 1px;
+    margin: 10px 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+}
+
+.real-timechart .ratings h4 {
+    font-weight: bold;
+    color: #999;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.real-timechart .ratings p {
+    color: #c2c2c5;
+}
+
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 360px) {
+    .main-chart .panel-tabs .nav-tabs>li {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .right-side {
+        padding: 107px 15px 10px 15px;
+    }
+    body>.header .logo,
+    body>.header .navbar {
+        width: 100%;
+    }
+}
+
+/*.btn-secondary:not([disabled]):not(.disabled):active {*/
+    /*background-color: #fff !important;*/
+/*}*/
+.read-more a{
+    text-decoration: none;
+}

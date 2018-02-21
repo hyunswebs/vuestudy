@@ -1,0 +1,142 @@
+.input-group-sm > .input-group-addon {
+    padding : 3px 10px;
+}
+.input-group-lg > .input-group-addon {
+    padding : 9px 16px;
+}
+.has-success .input-group-addon,
+.has-error .input-group-addon {
+    color : #fff;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    z-index : 0 !important;
+}
+.form-bordered .form-group > div {
+    padding     : 15px;
+    border-left : 1px solid #efefef;
+}
+.form-bordered .form-group {
+    margin        : 0;
+    border-bottom : 1px solid #efefef;
+}
+.form-bordered .control-label {
+    padding-top   : 17px;
+    margin-bottom : 0;
+    text-align    : right;
+}
+.form_layout form{
+    text-align: left;
+}
+.form-bordered-row .form-group {
+    margin        : 0;
+    border-bottom : 1px solid #efefef;
+}
+.form-bordered-row .control-label {
+    padding-top   : 17px;
+    margin-bottom : 0;
+    text-align    : right;
+}
+.form-bordered-row .form-group > div {
+    padding : 15px;
+}
+.right_aligned button {
+    margin-left : 7px;
+}
+.has-success .input-group-addon,
+.has-error .input-group-addon {
+    color : #555;
+}
+.fisrt_dropdwn{
+    /*z-index: 9999 !important;*/
+}
+.proc {
+    position : relative;
+    top      : -25px;
+    left     : 95%;
+}
+@media only screen and (max-width : 768px) {
+    .form-bordered .form-group > div {
+        border : none;
+    }
+}
+@media only screen and (max-width : 425px) {
+    .proc {
+        position : relative;
+        top      : -25px;
+        left     : 91%;
+    }
+}
+#tab3 .form-horizontal .radio, #tab3 .form-horizontal .checkbox,
+#tab3 .form-horizontal .radio-inline,#tab3 .form-horizontal .checkbox-inline {
+    padding-top: 0;
+    margin-bottom: 4px;
+}
+.m-l-10 {
+    margin-left :10px;
+}
+.panel-heading.tab-list {
+    padding: 2px 0 0 10px;
+}
+.tab-list .nav-tabs {
+    border-bottom: 0;
+}
+@media (min-width: 768px){
+    .form-inline .form-group {
+        margin-bottom: 13px;
+    }
+}
+
+.nav-link.active{
+    border-top: 3px solid #6699CC !important;
+}
+.remember .custom-control-description{
+    margin-left:20px;
+}
+.input-group-addon .custom-checkbox,.input-group-addon .custom-radio {
+    margin: 0;
+}
+@media(min-width: 320px) and (max-width:425px) {
+    .form-horizontal select {
+        margin-bottom: 10px;
+    }
+    .form-bordered .control-label{
+        text-align: left;
+    }
+    .d-inline .input-group{
+        margin-bottom: 10px;
+    }
+    .tab-pane select{
+        margin-bottom: 10px;
+    }
+}
+
+.striped-col{
+    background-color: #f9f9f9;
+}
+#inputError1:focus,#inputError2:focus{
+    box-shadow: 0px 0px 3px 0.1px #ff6666;
+}
+.form-control.is-valid{
+    border-color:#66cc99 !important;
+}
+.input-group-btn .b-dropdown .dropdown-toggle:active,.input-group-btn .btn-group.show .dropdown-toggle{
+    color: #fff !important;
+}
+.form-body{
+    clear:both;
+}
+.border-left-none{
+    border-left:none !important;
+}
+    .custom-control.custom-radio,.custom-control.custom-checkbox{
+        padding-left: 1.1rem;
+    }
+
+#example-file-input1,#example-file-multiple-input1,#example-file-input2,#example-file-multiple-input2,#example-file-input3,#example-file-multiple-input3{
+    width: 100%;
+}
+
+.fisrt_dropdwn .btn-info:not(:disabled):not(.disabled):active, .fisrt_dropdwn .btn-warning:not(:disabled):not(.disabled):active{
+    color: #fff;
+}

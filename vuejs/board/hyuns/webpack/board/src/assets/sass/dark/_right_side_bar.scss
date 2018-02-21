@@ -1,0 +1,330 @@
+
+                    /* right side bar css start */
+
+                  #right {
+                    transition: all .3s ease-in-out;
+                    width: 270px;
+                    z-index: 999;
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    overflow-y: auto;
+                    right: -270px;
+                    box-shadow: 0 0 15px #CCC;
+                    background: #FAFAFA;
+                    &.open{
+                      right: 0;
+                    }
+                    .nav-tabs > li > a:hover {
+                      border: 1px solid transparent;
+                    }
+                    .card-body{
+                      padding:0;
+                    }
+
+                  }
+
+.rightsidebar-right {
+  padding-top:50px;
+  @media (min-width:320px) and (max-width:560px) {
+    padding-top: 100px !important;
+  }
+  .nav-tabs {
+    border-bottom: 0;
+  }
+  .text-muted {
+    color: #555;
+  }
+  .rightsidebar-right-heading {
+    background: #FFF;
+    color: #555;
+    border-bottom: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    margin: 0px -20px 0;
+    font-size: 15px;
+    padding: 15px 20px 15px 15px;
+  }
+}
+
+
+.rightslider-p-t {
+  padding-top: 0 !important;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.rightsidebar-contact-wrapper {
+  margin: 1px -20px;
+  transition: all 0.5s ease;
+}
+
+.rightsidebar-contact-wrapper .rightsidebar-contact {
+  padding: 15px 20px;
+  display: block;
+  color: #2E576B;
+}
+
+.rightsidebar-contact-wrapper .rightsidebar-contact:hover {
+  text-decoration: none;
+}
+
+.rightsidebar-notification {
+  margin: 1px 0;
+  transition: all 0.5s ease;
+}
+
+.rightsidebar-notification a {
+  padding: 15px 0;
+  display: block;
+  color: #2E576B;
+}
+
+.sidebar-right-opened {
+  right: 250px
+}
+
+.sidebar-right-opened #right {
+  right: 0
+}
+
+.sidebar-right-opened .background-overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.12);
+  z-index: 998;
+  transition: background-color .3s;
+}
+
+.scrollable-content {
+  height: 100%;
+}
+
+
+/*rightside bar tabs*/
+
+#right .nav-tabs > li {
+  margin-bottom: -3px;
+}
+
+#right .nav-tabs > li > a {
+  padding: 10px 19px 4px 19px;
+  font-size: 23px;
+}
+
+#right .nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: 1px solid #DDD;
+  color: #555;
+  background-color: #FFF;
+  border-bottom-color: transparent;
+  margin-top: -2px;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+   border-top: 3px solid #6699cc !important;
+}
+#slim_t1,
+#slim_t2,
+#slim_t3 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#right #slim_t1 img {
+  width: 20px;
+  height: 20px;
+}
+
+/*tab 3 settings*/
+
+
+/*to hide default skin picker*/
+
+#slim_t3 ul {
+  padding: 0;
+}
+
+//skins css
+.setting-color {
+  padding: 0 2px;
+  margin-bottom: 5px;
+}
+
+.setting-color > label {
+  display: block;
+  position: relative;
+  margin: 10px;
+  padding: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 0;
+  box-shadow: 2px 4px 5px #CCC;
+  cursor: pointer;
+  width: 53px;
+  float: left;
+}
+
+//active color indication
+.setting-color > label.active-color .split .bg-default-clear:after,
+.setting-color > label.active-color .split .bg-mint:after,
+.setting-color > label.active-color .split .bg-grape:after,
+.setting-color > label.active-color .split .bg-lavender:after,
+.setting-color > label.active-color .split .bg-pink:after,
+.setting-color > label.active-color .split .bg-sunflower:after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  height: 22px;
+  width: 26px;
+  border-radius: 16px;
+  border-top: 13px solid #fafafa;
+}
+
+.setting-color > label.active-color .split .bg-default-clear:after {
+  border-bottom: 13px solid #2E576B;
+}
+
+.setting-color > label.active-color .split .bg-mint:after {
+  border-bottom: 13px solid #37BC9B;
+}
+
+.setting-color > label.active-color .split .bg-grape:after {
+  border-bottom: 13px solid #E76F7C;
+}
+
+.setting-color > label.active-color .split .bg-lavender:after {
+  border-bottom: 13px solid #AC92EC;
+}
+
+.setting-color > label.active-color .split .bg-pink:after {
+  border-bottom: 13px solid #EC87C0;
+}
+
+.setting-color > label.active-color .split .bg-sunflower:after {
+  border-bottom: 13px solid #FFCE54;
+}
+
+.setting-color > label:first-child {
+  margin-left: 10px;
+}
+
+.setting-color > label:last-child {
+  margin-right: 0
+}
+
+.setting-color > label > .color {
+  display: block;
+  height: 18px
+}
+
+.setting-color > label > .split {
+  display: block
+}
+
+.setting-color > label > .split:after,
+.setting-color > label > .split:before {
+  content: " ";
+  display: table
+}
+
+.setting-color > label > .split:after {
+  clear: both
+}
+
+.setting-color > label > .split > .color {
+  display: block;
+  height: 25.5px
+}
+
+.setting-color > label > .split > .color:first-child {
+  float: left;
+  width: 70%
+}
+
+.setting-color > label > .split > .color:last-child {
+  float: right;
+  width: 30%
+}
+
+.setting-color > label > input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.bg-default-light {
+  background-color: #2E576B;
+  color: #FFF;
+}
+
+.bg-default-clear {
+  background-color: #2E576B;
+  color: #EBF4E4;
+}
+
+.bg-mint-light {
+  background-color: #56CCAE;
+  color: #FFF;
+}
+
+.bg-mint {
+  background-color: #37BC9B;
+  color: #EBF4E4;
+}
+
+.bg-grape-light {
+  background-color: #F4929D;
+  color: #FFF;
+}
+
+.bg-grape {
+  background-color: #E76F7C;
+  color: #EBF4E4;
+}
+
+.bg-lavender-light {
+  background-color: #B6A0EC;
+  color: #FFF;
+}
+
+.bg-lavender {
+  background-color: #AC92EC;
+  color: #EBF4E4;
+}
+
+.bg-pink-light {
+  background-color: #EE98C8;
+  color: #FFF;
+}
+
+.bg-pink {
+  background-color: #EC87C0;
+  color: #EBF4E4;
+}
+
+.bg-gray {
+  background-color: #2E576B;
+}
+
+.bg-gray-light {
+  background-color: #EFEFEF;
+}
+
+.bg-sunflower {
+  background-color: #FFCE54;
+}
+
+.bg-sunflower-light {
+  background-color: #FFDD87;
+}
+/*rightside bar tabs ends*/
+ #slim_t1 a{
+   text-decoration: none;
+ }

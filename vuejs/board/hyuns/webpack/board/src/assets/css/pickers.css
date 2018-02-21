@@ -1,0 +1,70 @@
+#example28 + .btn-group > .multiselect {
+    min-width : 65px;
+}
+.bootstrap-touchspin-up, .bootstrap-touchspin-down {
+    border-radius : 0 !important;
+}
+.clockface > div {
+    overflow : hidden;
+}
+@media only screen and (min-width : 769px ) and (max-width : 1440px ) {
+    #example28-values {
+        margin-top : 10px;
+    }
+}
+@media (max-width : 320px ) {
+    .bootstrap-datetimepicker-widget.dropdown-menu {
+        width : 100%;
+        left  : 30px !important;
+    }
+}
+.btn-default,#toggle-btn{
+    color:#333;
+}
+.bootstrap-touchspin .input-group-btn-vertical{
+    width:5%;
+}
+@media(max-width: 768px){
+    .bootstrap-touchspin .input-group-btn-vertical i{
+        left:7px;
+    }
+    .bootstrap-touchspin .input-group-btn-vertical{
+        width: 4%;
+    }
+}
+@media(min-width: 320px) and (max-width: 425px){
+    .bootstrap-touchspin .input-group-btn-vertical{
+        width: 8% !important;
+    }
+}
+@media(max-width: 320px){
+    .bootstrap-touchspin .input-group-btn-vertical i{
+        left:5px;
+    }
+}
+.clockpicker-popover,.clockface{
+    z-index: 99;
+}
+.content .btn:hover{
+    color:#333;
+    background-color: #c3c3c3;
+}
+#button-a:hover{
+    background-color: #6699cc;
+    color:#fff;
+}
+.bootstrap-touchspin-prefix,.bootstrap-touchspin-postfix{
+    background-color: #ddd ;
+}
+
+
+/*touch spin bootstrap 3 version overrides*/
+.pickers .input-group-lg .bootstrap-touchspin-down,.pickers .input-group-lg .bootstrap-touchspin-up{
+    padding: 0.85rem 0.75rem;
+}
+.pickers .input-group-lg .btn, .pickers .input-group-sm .btn{
+    border-radius:0 ;
+}
+.pickers .bootstrap-touchspin-down,.pickers .bootstrap-touchspin-up{
+    padding: 0.39rem 0.75rem;
+}

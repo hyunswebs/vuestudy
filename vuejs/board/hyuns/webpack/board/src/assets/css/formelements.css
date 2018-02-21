@@ -1,0 +1,169 @@
+.select2-container .select2-selection--single {
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single {
+    border-radius: 0;
+}
+
+.daterangepicker.opensleft:after {
+    display: none;
+}
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    margin-left: 0;
+}
+.btn-file{
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+.file-input .input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    margin-left: -1px;
+}
+
+.file-error-message {
+    color: #FE5B5B;
+}
+
+.noresize {
+    resize: none;
+}
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+    margin-left: 0;
+}
+
+img.flag {
+    height: 16px;
+    width: 28px;
+    padding-right: 10px;
+}
+
+.file-preview-image {
+    max-width: 100% !important;
+}
+
+.m-b-10 {
+    margin-bottom: 10px !important;
+}
+
+.m-t-ng-8 {
+    margin-top: -8px;
+}
+
+#kvFileinputModal.file-zoom-fullscreen {
+    z-index: 10009;
+}
+
+.input-group-sm > .input-group-addon {
+    padding: 3px 10px;
+}
+
+.input-group-lg > .input-group-addon {
+    padding: 9px 16px;
+}
+.has-success .form-control{
+    border:1px solid #66cc99 !important;
+}
+.has-warning .form-control {
+    border-color: #f0ad4e;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.has-error .form-control {
+    border-color: #ff6666;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.input-sm{
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.input-md{
+    height: 34px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+.input-lg{
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33333;
+    border-radius: 6px;
+}
+.kv-upload-progress>.progress,.fileinput-cancel-button{
+    display: none;
+}
+.custom-checkbox,.custom-radio{
+    margin: 0;
+}
+.inline_radio .custom-radio,.inline_check .custom-checkbox{
+    padding-right: 50px;
+}
+.form-control:disabled{
+    cursor:not-allowed;
+}
+.content .card{
+    margin-top: 10px;
+}
+@media(min-width: 320px) and (max-width: 425px){
+    .input-group,.file-input-new,.btn-modify{
+        margin-bottom: 10px;
+    }
+    .input-group-btn .hidden-xs{
+        display: none;
+    }
+}
+@media (max-width:768px){
+    .input-group{
+        margin-bottom: 10px;
+    }
+}
+.inlineRadio .custom-radio{
+    margin-right: 10px !important;
+}
+.dropdown-menu.show{
+    margin-right: 20px;
+}
+#input-text-has-success:focus{
+    box-shadow: 0px 0px 5px 0.1px #66cc99;
+}
+#input-text-has-warning:focus{
+    box-shadow: 0px 0px 5px 0.1px #f0ad4e;
+}
+#input-text-has-error:focus{
+    box-shadow: 0px 0px 5px 0.1px #ff6666;
+}
+.kv-file-zoom,.file-upload-indicator{
+    display: none;
+}
+.file-caption-main .btn-default{
+    color: #333;
+}
+.btn:active{
+    color: #fff !important;
+}
+.input_height .btn-group.show .dropdown-toggle{
+    color: #fff;
+}
+#input-20{
+    margin-bottom: 10px;
+}
+.input-group-btn .dropdown-menu{
+    z-index: 99;
+}
+
+
+
+/*bootstrap3 ovverrides*/
+.file-input-section .input-group-append .btn-file,.file-input-section .file-input .btn-file{
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+}

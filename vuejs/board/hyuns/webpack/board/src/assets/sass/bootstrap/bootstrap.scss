@@ -1,0 +1,52 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700');
+
+/* Set Font Family */
+
+$font-family-sans-serif: -apple-system,BlinkMacSystemFont,'Open Sans',Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !default;
+
+/*=============Over ride =====*/
+
+@import '~bootstrap/scss/functions';
+@import "variables"; // Core variables and mixins
+@import '~bootstrap/scss/bootstrap';
+@import "cards";
+// button overrides
+.btn {
+  color: #fff;
+  font-size: 14px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+// badges overrides
+.badge {
+  color: #fff;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+//*****  form validation ******
+.bv-form .help-block {
+  color: $danger;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.has-error {
+  input,select,textarea {
+    border: 1px solid $danger;
+    &:focus{
+      border: 1px solid $danger;
+    }
+  }
+}
+//*****  form validation ******
+
+[disabled] {
+  cursor: not-allowed;
+}

@@ -1,0 +1,125 @@
+/* calendar custome code */
+
+.content .new_calendar{
+    border: 1px solid #eee;
+    display: flex !important;
+}
+.new_calendar .calendar{
+    height:45em;
+    width: 100%;
+}
+.calendar .header {
+    margin-right: auto;
+    margin-left: auto;
+}
+.cellHead{
+    font-size: 16px;
+}
+.eventRange{
+    padding-top: 3px;
+    padding-bottom: 10px;
+    color:#fff;
+}
+.calendar .header{
+    z-index: 99 !important;
+}
+/*vue calendar*/
+.app-description {
+    flex: 0 1 auto;
+}
+.calendar-view {
+    flex: 1 1 auto;
+    margin-bottom: 1em;
+}
+
+.calendar-view.period-week,
+.calendar-view.period-month.periodCount-1 {
+    height: 60vw;
+}
+
+.calendar-view.period-month.periodCount-2,
+.calendar-view.period-month.periodCount-3 {
+    height: 150vw;
+}
+
+.calendar-view.period-year {
+    height: 500vw;
+}
+
+
+/* Add some emoji for Canada and France... */
+.calendar .d07-01 .date::before {
+    content: "\1F1E8\1F1E6";
+    margin-right: 0.5em;
+}
+.calendar .d07-14 .date::before {
+    content: "\1F1EB\1F1F7";
+    margin-right: 0.5em;
+}
+/* Add some styling for events tagged with the "birthday" class */
+.calendar .event.birthday {
+    background-color: #e0f0e0;
+    border-color: #d7e7d7;
+}
+.calendar .event.birthday::before {
+    content: "\1F382";
+    margin-right: 0.5em;
+}
+.calendar-view .header{
+    z-index: 99 !important;
+}
+@media(max-width:320px){
+    .calendar-view .header{
+        height:120px;
+    }
+}
+/*vue simple calendar*/
+@media(min-width: 320px) and (max-width: 425px){
+    .calendar-view .nav{
+        width: 100%;
+        display: inline-table;
+        margin:0 !important;
+        margin-top: -20px !important;
+    }
+    .calendar-view .periodLabel{
+        position: absolute;
+        margin-top: 20px !important;
+    }
+    .calendar-view .periodLabel div{
+        display: flex;
+    }
+    .period-week.calendar-view .header{
+        height: 100px;
+    }
+    .period-week.calendar-view .periodLabel{
+        width: 100%;
+        overflow-x: scroll;
+        margin: 30px 0 0 0 !important;
+    }
+    .period-year .header{
+        height: 100px;
+    }
+
+    /*month*/
+    .period-month.periodCount-3 .header,.period-month.periodCount-2 .header{
+        height: 90px;
+    }
+    .period-month.periodCount-1 .header{
+        height: 160px;
+    }
+    .period-year.periodCount-2 .header{
+        height: 220px;
+    }
+    .period-year.periodCount-3 .header{
+        height: 250px;
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px){
+    .calendar-view .header .periodLabel > div{
+        font-size: 1em !important;
+    }
+}
+
+.badge1{
+    background-color: #6699cc;
+}
