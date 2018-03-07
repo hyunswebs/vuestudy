@@ -3,7 +3,7 @@
     <h4 class="table-title text-center mt-3">{{title}}</h4>
   </div>
   <div class="text-left">
-    <div id="search-input-container">
+    <div id="search-input-container" v-if="paginated.length > 0">
       <label>
         <input type="search" id="search-input" class="form-control mb-2" placeholder="Search data" v-model="searchInput">
       </label>
@@ -21,7 +21,7 @@
         <th>
           No
         </th>
-        <th v-for="(column, index) in columns" @click="sort(index)" :class="(sortable ? 'sortable' : '')
+        <th v-for="(column, index) in columns"  v-if="column.listView" @click="sort(index)" :class="(sortable ? 'sortable' : '')
                             + (sortColumn === index ?
                                 (sortType === 'desc' ? ' sorting-desc' : ' sorting-asc') : '')" :style="{width: column.width ? column.width : 'auto'}">
           {{column.label}} <i class="fa float-right" :class="(sortColumn === index ?
@@ -32,11 +32,11 @@
       </tr>
       </thead>
       <tbody>
-      <tr v-for="(row, index) in paginated" @click="click(row, index)">
+      <tr v-for="(row, index) in paginated" @click="click(row, index)" v-if="paginated.length > 0">
         <td>
           {{processedRows.length - ((currentPage-1) * currentPerPage + (index)) }}
         </td>
-        <template v-for="column in columns">
+        <template v-for="column in columns"   v-if="column.listView">
           <td :class="column.numeric ? 'numeric' : ''" v-if="!column.html">
             {{ collect(row,column.field) }}
           </td>
@@ -44,7 +44,7 @@
           </td>
         </template>
         <td>
-          <a href="#" >
+          <a href="#"  @click.prevent="modifyViewFnc(row)">
             <i class='fa fa-pencil text-info mr-3'></i>
           </a>
           <a href="#" @click.prevent="deleteDataFnc(row, index)">
@@ -53,10 +53,15 @@
         </td>
         <slot name="tbody-tr" :row="row"></slot>
       </tr>
+      <tr v-if="paginated.length == 0">
+        <td :colspan="columns.length + 1" style="text-align: center;">
+            데이터가 없습니다.
+        </td>
+      </tr>
       </tbody>
     </table>
   </div>
-  <div class="table-footer" v-if="paginate">
+  <div class="table-footer" v-if="paginated.length > 0">
     <div class="datatable-length float-left pl-3">
       <span>Rows per page:</span>
       <select class="custom-select" v-model="currentPerPage">

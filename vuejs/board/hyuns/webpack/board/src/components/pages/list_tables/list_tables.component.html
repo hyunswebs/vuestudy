@@ -1,7 +1,13 @@
 <div class="row">
   <div class="col-lg-12 mb-3">
-    <b-card header="리스트 형 게시판" header-tag="h4" class="bg-success-card">
-      <list-board title="" :rows="rowdata" :columns="columndata" v-on:delete_data = "deleteData"></list-board>
+    <b-card header="리스트 형 게시판" header-tag="h4" class="bg-success-card" v-show="viewType == 'list'">
+      <button class="button button-glow button-rounded button-primary-flat hvr-float-shadow" @click.prevent="viewRegister()">
+        글쓰기
+      </button>
+      <list-board title="" :rows="rowdata" :columns="columndata" v-on:delete_data = "deleteData" v-on:modify_view="modifyView"></list-board>
+    </b-card>
+    <b-card header="리스트 형 게시판 수정" header-tag="h4" class="bg-success-card" v-show="viewType == 'modify' || viewType == 'register' ">
+      <list-board-detail title="" :row="currentData" :columns="columndata" :viewType = "viewType" v-on:row_manager="rowManager" v-on:cancel = "cancel"></list-board-detail>
     </b-card>
   </div>
 </div>

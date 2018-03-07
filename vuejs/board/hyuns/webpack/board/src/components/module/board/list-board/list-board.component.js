@@ -58,8 +58,6 @@ export default {
       return this.currentPage == value;
     },
     nextPage() {
-      console.log(this.isPrevPage);
-      console.log(this.isBigPrevPage);
       if (this.processedRows.length > this.currentPerPage * this.currentPage && this.currentPerPage != -1)
         ++this.currentPage;
     },
@@ -147,6 +145,9 @@ export default {
     },
     deleteDataFnc(data,index){
       this.$emit("delete_data", data,index);
+    },
+    modifyViewFnc(data){
+      this.$emit("modify_view", data);
     }
   },
 
